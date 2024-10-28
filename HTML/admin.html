@@ -17,44 +17,48 @@
 <body>
   <header>
     <nav>
-      <div class="nav-bar">
-          <i class='bx bx-menu sidebarOpen' ></i>
-          <span class="logo navLogo">
-              <div class="darkLightLogo">
-                  <i class='logoDark'><img src="/MEDIA/2.png" > </i>
-                  <i class='logoLight'><img   src="/MEDIA/Just.png"></i>
-              </div>
-          </span>
-          <div class="menu">
-              <div class="logo-toggle">
-                  <span class="logo"><a href="#"> <img style="max-width: 200px;" src="/MEDIA/2.png"></a></span>
-                  <i class='bx bx-x siderbarClose'></i>
-              </div>
-              <ul class="nav-links">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="/HTML/acercade.html" id="acercade-link">Acerca de</a></li>
-                <li><a href="/HTML/contactos.html" id="contactos-link">Contactos</a></li>
-                <li><a href="/HTML/historial.html" id="historial-link" style="display:none;">Ver Compras</a></li>
-                <li><a href="/HTML/admin.html" id="productos-link" style="display:none;">Productos</a></li>
-                <span id="welcome-message" style="display:none;"></span>
-                <li><a href="#" id="logout-link" style="display:none;">Cerrar Sesión</a></li>
-            </ul>
-          </div>
-          <div class="darkLight-searchBox">
-              
-              <div class="searchBox">
-                 <div class="searchToggle">
-                  <i class='bx bx-user'></i>
-                 </div>
-                  <div class="search-field">
-                      <button onclick="loginRedirect()"id="login-link">Iniciar Sesion</button>
-                      <button onclick="registerRedirect()" id="register-link">Registrar</button>
-                  
-                  </div>
-              </div>
-          </div>
-      </div>
-  </nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo">
+                <div class="darkLightLogo">
+                    <i class='logoDark'><img src="/MEDIA/2.png" > </i>
+                    <i class='logoLight'><img   src="/MEDIA/Just.png"></i>
+                </div>
+            </span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#"> <img style="max-width: 200px;" src="/MEDIA/2.png"></a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="/HTML/acercade.html" id="acercade-link">Acerca de</a></li>
+                    <li><a href="/HTML/contactos.html" id="contactos-link">Contactos</a></li>
+                    <li><a href="/HTML/historial.html" id="historial-link" style="display:none;">Ver Compras</a></li>
+                    <li><a href="/HTML/admin.html" id="productos-link" style="display:none;">Productos</a></li>
+                    <span id="welcome-message" style="display:none;"></span>
+                    <li><a href="#" id="logout-link" style="display:none;">Cerrar Sesión</a></li>
+                    <button class="info-button" id="cart-btn">Carrito (0)</button>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-user'></i>
+                   </div>
+                    <div class="search-field">
+                        <button onclick="loginRedirect()" id="login-link">Iniciar Sesion</button>
+                        <button onclick="registerRedirect()" id="register-link">Registrar</button>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
   </header>
 
   <main>
