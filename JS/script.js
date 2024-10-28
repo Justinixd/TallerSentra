@@ -85,11 +85,9 @@ function loadPiezas() {
 
  // Cargar los productos cuando se cargue la página principal
  document.addEventListener('DOMContentLoaded', function() {
-
-  if (window.location.pathname.includes('index.html')) {
     loadServicios();
     loadPiezas();
-  }
+  
 });
 //////////////////////////////////////////////////////////
 
