@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Taller - Contactos</title>
+   <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/contactos.css">
+   <!-- ===== boostrap ===== -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <!-- ===== Boxicons CSS ===== -->
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <nav>
+    <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen' ></i>
+        <span class="logo navLogo">
+            <div class="darkLightLogo">
+                <i class='logoDark'><img src="/MEDIA/2.png" > </i>
+                <i class='logoLight'><img   src="/MEDIA/Just.png"></i>
+            </div>
+        </span>
+        <div class="menu">
+            <div class="logo-toggle">
+                <span class="logo"><a href="#"> <img style="max-width: 200px;" src="/MEDIA/2.png"></a></span>
+                <i class='bx bx-x siderbarClose'></i>
+            </div>
+            <ul class="nav-links">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="/HTML/acercade.html" id="acercade-link">Acerca de</a></li>
+              <li><a href="/HTML/contactos.html" id="contactos-link">Contactos</a></li>
+              <li><a href="/HTML/historial.html" id="historial-link" style="display:none;">Ver Compras</a></li>
+              <li><a href="/HTML/admin.html" id="productos-link" style="display:none;">Productos</a></li>
+              <span id="welcome-message" style="display:none;"></span>
+              <li><a href="#" id="logout-link" style="display:none;">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+        <div class="darkLight-searchBox">
+            <div class="dark-light">
+                <i class='bx bx-moon moon'></i>
+                <i class='bx bx-sun sun'></i>
+            </div>
+            <div class="searchBox">
+               <div class="searchToggle">
+                <i class='bx bx-user'></i>
+               </div>
+                <div class="search-field">
+                    <button onclick="loginRedirect()" class="info-button"id="login-link">Iniciar Sesion</button>
+                    <button onclick="registerRedirect()" class="info-button" id="register-link">Registrar</button>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+   <main>
+      <section id="contact-us">
+         <div class="contact-container">
+           <h1>Contáctenos</h1>
+           <div class="contact-content">
+             <div class="contact-info">
+               <h2>Información de Contacto</h2>
+               <ul>
+                 <li><i class="fa fa-phone"></i> Teléfono: <a href="tel:2230-5222">2230-5232</a></li>
+                 <li><i class="fa fa-envelope"></i> Correo: <a href="TallerSentra@sentra.com">sentra@sentra.com</a></li>
+                 <li><i class="fa fa-map-marker"></i> Dirección: Calle Principal, Aserrí, Costa Rica</li>
+               </ul>
+             </div>
+       
+             <div class="contact-form">
+               <h2>Envíenos un Mensaje</h2>
+               <form id="contact-form">
+                 <div class="form-group">
+                   <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+                 </div>
+                 <div class="form-group">
+                   <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                 </div>
+                 <div class="form-group">
+                   <textarea id="message" name="message" placeholder="Escriba su mensaje" rows="5" required></textarea>
+                 </div>
+                 <button class="info-button" type="submit">Enviar Mensaje</button>
+               </form>
+             </div>
+           </div>
+       
+
+         </div>
+       </section>
+       
+   </main>
+
+   <footer>
+    <span>©Sentra 2024 - Todos los derechos reservados</span>
+    
+    <div class="footerdiv">
+      <div class="footerdiv1">
+      <img src="/MEDIA/2.png" style="border-radius: 5px; width: 200px; height: 200px;">
+      </div>
+      <div class="footerdiv2">
+        <h3 class="headline footer">Servicio al Cliente</h3>
+        <ul class="footer-links">
+          <li><a href="#">Métodos de Pago</a></li>
+          <li><a href="#">Entregas y Devoluciones</a></li>
+          <li><a href="#">Políticas de Cookies</a></li>
+          <li><a href="#">Políticas de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Reclamaciones</a></li>
+        </ul>
+      </div>
+      <div class="footerdiv2">
+        <h3 class="headline footer">Contáctenos</h3>
+        <ul>
+          <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:2230-5200" class="ng-binding">2230-5222</a></li>
+          <li><i class="fa fa-envelope" aria-hidden="true"></i>
+            <a class="ng-binding" href="TallerSentra@sentra.com">sentra@sentra.com</a>
+          </li>
+          <li><a href="../HTML/contactos.html"><i class="fa fa-comment" aria-hidden="true"></i> Contáctenos</a></li>
+          <li><a href="../HTML/preguntas.html"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas Frecuentes</a></li>
+          <li><a href="../HTML/ubicacion.html"><i class="fas fa-store" aria-hidden="true"></i> Talleres</a></li>
+          <li><a href="../HTML/acercade.html"><i class="fas fa-building" aria-hidden="true"></i> ¿Quiénes Somos?</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="map">
+       <h2>Ubicación</h2>
+       <iframe src="https://www.google.com/maps/embed?pb=..." width="65%" height="300" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+  </footer>
+
+   <script src="/JS/navfoot.js"></script>
+   <script src="/JS/script.js"></script>
+   <script src="/JS/compras.js"></script>
+</body>
+</html>

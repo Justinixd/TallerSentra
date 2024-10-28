@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Taller - Acerca de...</title>
+   <link rel="stylesheet" href="../CSS/style.css">
+   <link rel="stylesheet" href="../CSS/acercade.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- ===== Boxicons CSS ===== -->
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+   <nav>
+      <div class="nav-bar">
+          <i class='bx bx-menu sidebarOpen' ></i>
+          <span class="logo navLogo">
+              <div class="darkLightLogo">
+                  <i class='logoDark'><img src="/MEDIA/2.png" > </i>
+                  <i class='logoLight'><img   src="/MEDIA/Just.png"></i>
+              </div>
+          </span>
+          <div class="menu">
+              <div class="logo-toggle">
+                  <span class="logo"><a href="#"> <img style="max-width: 200px;" src="/MEDIA/2.png"></a></span>
+                  <i class='bx bx-x siderbarClose'></i>
+              </div>
+              <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/HTML/acercade.html" id="acercade-link">Acerca de</a></li>
+                <li><a href="/HTML/contactos.html" id="contactos-link">Contactos</a></li>
+                <li><a href="/HTML/historial.html" id="historial-link" style="display:none;">Ver Compras</a></li>
+                <li><a href="/HTML/admin.html" id="productos-link" style="display:none;">Productos</a></li>
+                <span id="welcome-message" style="display:none;"></span>
+                <li><a href="#" id="logout-link" style="display:none;">Cerrar Sesión</a></li>
+            </ul>
+          </div>
+          <div class="darkLight-searchBox">
+              <div class="dark-light">
+                  <i class='bx bx-moon moon'></i>
+                  <i class='bx bx-sun sun'></i>
+              </div>
+              <div class="searchBox">
+                 <div class="searchToggle">
+                  <i class='bx bx-user'></i>
+                 </div>
+                  <div class="search-field">
+                      <button onclick="loginRedirect()"id="login-link">Iniciar Sesion</button>
+                      <button onclick="registerRedirect()" id="register-link">Registrar</button>
+                  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+   <main>
+      <div class="about-container">
+         <h1>Acerca de Nosotros</h1>
+         <div class="about-content">
+           <div class="about-text">
+             <h2>Sentra </h>
+             <p>En Sentra, entendemos que tu vehículo es más que un medio de transporte; es una parte esencial de tu vida. Nos dedicamos a ofrecer reparaciones de alta calidad, garantizando que cada viaje sea seguro y placentero. Con un equipo de expertos comprometidos y tecnología de vanguardia, estamos aquí para mantener tu auto en óptimas condiciones. ¡Confía en Sentra para que cada kilómetro cuente!</p>
+             <p>En Sentra, nuestra misión es proporcionar servicios de reparación vehicular de la más alta calidad, asegurando la seguridad y el rendimiento óptimo de cada vehículo que atendemos. Nos comprometemos a ofrecer un servicio al cliente excepcional, basándonos en la transparencia y la confianza, para que nuestros clientes se sientan seguros en cada viaje.</p>
+             <p>Nuestra visión es ser la empresa líder en reparaciones vehiculares en la región, reconocida por la excelencia en nuestros servicios y la satisfacción del cliente. Aspiramos a innovar constantemente en nuestras técnicas y tecnologías, construyendo relaciones duraderas con nuestros clientes y contribuyendo a una movilidad más segura y eficiente para todos.</p>
+           </div>
+           <div class="about-image">
+             <img src="/MEDIA/diag_vec-500x290.jpg" alt="Imagen del supermercado">
+           </div>
+         </div>
+       </div>
+   </main>
+   </body>
+   <footer>
+      <span>©Sentra 2024 - Todos los derechos reservados</span>
+      
+      <div class="footerdiv">
+        <div class="footerdiv1">
+        <img src="/MEDIA/2.png" style="border-radius: 5px; width: 200px; height: 200px;">
+        </div>
+        <div class="footerdiv2">
+          <h3 class="headline footer">Servicio al Cliente</h3>
+          <ul class="footer-links">
+            <li><a href="#">Métodos de Pago</a></li>
+            <li><a href="#">Entregas y Devoluciones</a></li>
+            <li><a href="#">Políticas de Cookies</a></li>
+            <li><a href="#">Políticas de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Reclamaciones</a></li>
+          </ul>
+        </div>
+        <div class="footerdiv2">
+          <h3 class="headline footer">Contáctenos</h3>
+          <ul>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:2230-5200" class="ng-binding">2230-5222</a></li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>
+              <a class="ng-binding" href="TallerSentra@sentra.com">sentra@sentra.com</a>
+            </li>
+            <li><a href="../HTML/contactos.html"><i class="fa fa-comment" aria-hidden="true"></i> Contáctenos</a></li>
+            <li><a href="../HTML/preguntas.html"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas Frecuentes</a></li>
+            <li><a href="../HTML/ubicacion.html"><i class="fas fa-store" aria-hidden="true"></i> Talleres</a></li>
+            <li><a href="../HTML/acercade.html"><i class="fas fa-building" aria-hidden="true"></i> ¿Quiénes Somos?</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="map">
+         <h2>Ubicación</h2>
+         <iframe src="https://www.google.com/maps/embed?pb=..." width="65%" height="300" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+    </footer>
+   <script src="../JS/script.js"></script>
+   <script src="/JS/navfoot.js"></script>
+
+</html>

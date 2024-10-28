@@ -1,0 +1,74 @@
+/* ===== Colours ===== */
+:root{
+    --body-color: #E4E9F7;
+    --nav-color: #ff4e1f;
+    --side-nav: #511606;
+    --text-color: #FFF;
+    --search-bar: #F2F2F2;
+    --search-text: #000000;
+    --footer-color: #ff4e1f;
+    --card-background-color: rgb(255, 255, 255);
+    --historial-text-color: #000000;
+    --header-PS: #511606;
+    --text-description: #666;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--body-color);
+}
+
+body.dark{
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #FFF;
+    --search-bar: #242526;
+    --footer-color: #242526;
+    --card-background-color: #242526;
+    --historial-text-color: #ffffff;
+    --header-PS: #ffffff;
+    --text-description: #ffffff;
+}
+
+.card-servicio {
+    display: flex;
+    align-items: start;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+.service-icon img {
+    width: 50px;
+    height: 50px;
+   
+}
+
+.service-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--text-color-);
+    margin: 0;
+}
+
+.service-description, .price-servicio, .cantidad-servicio {
+    color: var(--text-description);
+    margin: 5px 0;
+    font-size: 0.9em;
+    text-align: start;
+}
+
+.sold-out {
+    color: #e53935;
+    font-weight: bold;
+}
+
+card-servicio button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+

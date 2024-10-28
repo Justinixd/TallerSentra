@@ -1,0 +1,156 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;;
+}
+
+
+/* ===== Colours ===== */
+:root{
+    --body-color: #E4E9F7;
+    --nav-color: #ff4e1f;
+    --side-nav: #511606;
+    --text-color: #FFF;
+    --search-bar: #F2F2F2;
+    --search-text: #000000;
+    --footer-color: #ff4e1f;
+    --card-background-color: rgb(255, 255, 255);
+    --body-text-color: #000000;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--body-color);
+}
+
+body.dark{
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #FFF;
+    --search-bar: #242526;
+    --footer-color: #242526;
+    --cardcolor: #252525;
+    --body-text-color: #fff;
+}
+/* Estilos para la sección de Contactos */
+#contact-us {
+   padding: 50px 20px;
+   background-color: var(--body-color);
+ }
+ 
+ .contact-container {
+  color: var(--body-text-color);
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ h1 {
+   text-align: center;
+   font-size: 2.5rem;
+   color: #ff4e1f;
+   margin-bottom: 30px;
+ }
+ 
+ /* Contenido de contacto: info y formulario */
+ .contact-content {
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+   margin-bottom: 50px;
+ }
+ 
+ /* Información de contacto */
+ .contact-info {
+   flex: 1;
+ }
+ 
+ .contact-info ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .contact-info li {
+   font-size: 1.2rem;
+   margin-bottom: 15px;
+ }
+ 
+ .contact-info li i {
+   margin-right: 10px;
+ }
+ 
+ .contact-info a {
+   text-decoration: none;
+ }
+ 
+ .contact-info a:hover {
+   text-decoration: underline;
+ }
+ 
+ /* Formulario de contacto */
+ .contact-form {
+   flex: 1;
+ }
+ 
+ .contact-form .form-group {
+   margin-bottom: 20px;
+ }
+ 
+ .contact-form input,
+ .contact-form textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+ }
+ 
+ /* CSS */
+.info-button {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: var(--nav-color);
+  font-family: ",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.info-button:hover {
+  background-color: rgb(249,250,251);
+}
+
+.info-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.info-button:focus-visible {
+  box-shadow: none;
+}
+ 
+ 
+ 
+ /* Responsividad */
+ @media (max-width: 900px) {
+   .contact-content {
+     flex-direction: column;
+   }
+ 
+ }
+ 
