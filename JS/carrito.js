@@ -5,6 +5,7 @@ let iva = 0;
 
 // Función para agregar productos al carrito
 function agregarAlCarrito(producto) {
+    
     const productoExistente = carrito.find(item => item.name === producto.name);
 
     if (productoExistente) {
@@ -18,6 +19,8 @@ function agregarAlCarrito(producto) {
         // Agregar el producto al carrito con cantidad 1
         carrito.push({ ...producto, quantity: 1 });
     }
+
+    console.log(carrito)
 
     subtotal += parseFloat(producto.price);
     iva = subtotal*0.13;
@@ -157,5 +160,6 @@ function verificarRolUsuario() {
       document.getElementById('admin-options').style.display = 'none'; 
   }
 };
+
 
 
