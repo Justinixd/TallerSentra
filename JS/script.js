@@ -27,7 +27,7 @@ function loadServicios() {
             <p class="price-servicio">Precio: $${product.price}</p>
             <p class="cantidad-servicio">Cantidad disponible: ${product.quantity}</p>
             ${product.quantity === '0' ? '<p class="sold-out">PRODUCTO AGOTADO</p>' : ''}
-            <button class="info-button" ${product.quantity === '0' ? 'disabled' : ''} data-index="${index}">
+            <button class="add-to-cart-btn-servicios info-button " ${product.quantity === '0' ? 'disabled' : ''} data-index="${index}">
                 Agregar al carrito
             </button>
         </div>
@@ -42,7 +42,7 @@ function loadServicios() {
     button.addEventListener('click', function() {
       const productIndex = this.getAttribute('data-index');
       const selectedProduct = servicios[productIndex];
-      agregarAlCarritoServicios(selectedProduct);
+      agregarAlCarrito(selectedProduct);
     });
   });
 }
@@ -67,24 +67,31 @@ function loadPiezas() {
       <p>Precio: $${product.price}</p>
       <p>Cantidad disponible: ${product.quantity}</p>
       ${product.quantity === '0' ? '<p class="sold-out">PRODUCTO AGOTADO</p>' : ''}
-      <button class="info-button" ${product.quantity === '0' ? 'disabled' : ''} data-index="${index}">Agregar al carrito</button>
+      <button class="add-to-cart-btn-piezas info-button " ${product.quantity === '0' ? 'disabled' : ''} data-index="${index}">Agregar al carrito</button>
     `;
 
     piezasList.appendChild(productCard);
   });
 
   // Agregar eventos a los botones "Agregar al carrito"
-  document.querySelectorAll('.info-button').forEach(button => {
+  document.querySelectorAll('.add-to-cart-btn-piezas').forEach(button => {
     button.addEventListener('click', function() {
       const productIndex = this.getAttribute('data-index');
       const selectedProduct = piezas[productIndex];
-      agregarAlCarritoPiezas(selectedProduct);
+      agregarAlCarrito(selectedProduct);
     });
   });
 }
 
+
+
+
+
+
  // Cargar los productos cuando se cargue la página principal
  document.addEventListener('DOMContentLoaded', function() {
+
+  
     loadServicios();
     loadPiezas();
   
@@ -100,6 +107,7 @@ function updateNav() {
    const historialLink = document.getElementById('historial-link');
    const welcomeMessage = document.getElementById('welcome-message');
    const productosLink = document.getElementById('productos-link');
+   const cartButton = document.getElementById('cart-btn');
 
  if (loggedInUser === 'admin') {
   productosLink.style.display = 'inline';
@@ -114,6 +122,7 @@ function updateNav() {
      welcomeMessage.style.display = 'inline';  
      welcomeMessage.textContent = `Bienvenido, ${loggedInUser}`;  
      logoutLink.style.display = 'inline';  
+     cartButton.style.display = 'inline'
    } else {
      // Si no hay usuario logueado
      loginLink.style.display = 'inline';  
