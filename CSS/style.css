@@ -612,3 +612,17 @@ button:hover + .info-card,
 .info-button button:focus-visible{
   box-shadow: none;
 }
+
+#cart {
+  background-color: var(--card-background-color);
+  color: var(--historial-text-color);
+}
+
+#cart-items .list-group-item {
+  background-color: var(--search-bar);
+  color: var(--search-text);
+}
+
+#checkout-btn:hover {
+  background-color: darken(var(--nav-color), 10%);
+}
